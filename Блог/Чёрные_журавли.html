@@ -1,0 +1,98 @@
+<html>
+	<head>
+		
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+		
+		<style>
+			img
+			{
+				height: 280px;
+				width: 450px;
+				position: absolute;
+				padding: 10px;
+			}
+			.container
+			{
+				position:relative;
+				display: flex;
+				justify-content: center;
+			}
+			.polar_bear_text
+			{
+				padding: 30px;
+				font-size: 20px;
+			}
+			
+			body
+			{
+				background: url(1612726605_67-p-krasivie-golubie-foni-neba-84.jpg);
+				background-repeat: no-repeat;
+				background-size: cover;
+			}
+		
+			
+		</style>
+	</head>
+	<body> 
+		<section class="banner-section"></section>
+	
+		<h1 align="center">Чёрный журавль</h1>
+		<p class = "polar_bear_text">Род Журавль включает 14 видов птиц, обитающих по всему миру. Некоторые из них являются редкими и находятся под охраной. Черный журавль – одна из таких птиц, занесенная в международную Красную Книгу.</p>
+		<h2 align="center">Самые интересные факты о черных журавлях</h2>
+		<ol style = "font-size: 20px; padding:30px;">
+			<li>Вид считается мало изученным из-за скрытного образа жизни журавля и обитания его в труднодоступных районах. Первое гнездо этого вида было обнаружено лишь в 1974 году.</li>
+			<li>Черный журавль образует устойчивые семейные пары на всю жизнь.</li>
+			<li>За скрытный образ жизни и темное оперение называют «журавль – монах».</li>
+			<li>Ареал обитания редкого вида охватывает большую часть Сибири, Китай и Японию.</li>
+			<li>Изображение черного журавля можно увидеть на серебряной монете, достоинством 1 рубль (серия Красная Книга) Банка России.</li>
+		</ol>
+		<figure>
+			<figcaption><h2>Включить аудио:</h2></figcaption>
+			<audio controls src="Журавли.mp3">
+			</audio>
+			
+			<div class='container'>
+				<img class='img-1' src='111.jpg'>
+				<img class='img-2' src='222.jpg'>
+				<img class='img-3' src='333.jpg'>
+				<img class='img-4' src='444.jpg'>
+				<img class='img-5' src='555.jpg'>
+				<img class='img-6' src='666.jpeg'>
+			</div>
+			
+			<script>
+			$('.img-6').click(function(){
+				$('.img-6').fadeOut();
+				$('.img-5').fadeIn();
+			});
+			$('.img-5').click(function(){
+				$('.img-5').fadeOut();
+				$('.img-4').fadeIn();
+			});
+			$('.img-4').click(function(){
+				$('.img-4').fadeOut();
+				$('.img-3').fadeIn();
+			});
+			$('.img-3').click(function(){
+				$('.img-3').fadeOut();
+				$('.img-2').fadeIn();
+			});
+			$('.img-2').click(function(){
+				$('.img-2').fadeOut();
+				$('.img-1').fadeIn();
+			});
+			$('.img-1').click(function(){
+				$('.img-1').fadeOut();
+				$('.img-6').fadeIn();
+			});
+			
+			
+
+			
+			
+			
+			
+		</script>
+		</figure>
+	</body>
+</html>

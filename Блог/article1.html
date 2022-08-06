@@ -1,0 +1,98 @@
+<html>
+	<head>
+		
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+		
+		<style>
+			img
+			{
+				height: 280px;
+				width: 450px;
+				position: absolute;
+				padding: 10px;
+			}
+			.container
+			{
+				position:relative;
+				display: flex;
+				justify-content: center;
+			}
+			.polar_bear_text
+			{
+				padding: 30px;
+				font-size: 20px;
+			}
+			
+			body
+			{
+				background: url(zima-sneg-snezhinki-fon-christmas-blue-winter-background-s-1.jpg);
+				background-repeat: no-repeat;
+				background-size: cover;
+			}
+		
+			
+		</style>
+	</head>
+	<body> 
+		<section class="banner-section"></section>
+	
+		<h1 align="center">Белый медведь</h1>
+		<p class = "polar_bear_text">Белого медведя называют по-разному: северный медведь, полярный мишка, а северные народы зовут его нанук или ошкуй. За всеми этими названиями скрывается умный и находчивый хищник, который сумел приспособиться и выжить в таком суровом полярном климате.</p>
+		<h2 align="center">Самые интересные факты о белом медведе</h2>
+		<ol style = "font-size: 20px; padding:30px;">
+			<li>Белый медведь — самый большой теплокровный хищник на планете. Вес белого медведя может достигать 1 000 кг, а длина 3 метров.</li>
+			<li>Шерсть белого медведя очень плотная и не имеет пигментации. Такой покров позволяет лучше сохранять тепло.</li>
+			<li>Кожа у белого медведя черная.</li>
+			<li>Белый медведь плавает со скоростью 6,5 км/ч.</li>
+			<li>Медведи обладают отличным обонянием. Уловить запах тюленя, выбравшегося на лед, они могут на расстояние 32 километров.</li>
+		</ol>
+		<figure>
+			<figcaption><h2>Включить аудио:</h2></figcaption>
+			<audio controls src="Белые_медведи.mp3">
+			</audio>
+			
+			<div class='container'>
+				<img class='img-1' src='1.jpg'>
+				<img class='img-2' src='2.jpeg'>
+				<img class='img-3' src='3.jpg'>
+				<img class='img-4' src='4.jpeg'>
+				<img class='img-5' src='5.jpg'>
+				<img class='img-6' src='6.jpg'>
+			</div>
+			
+			<script>
+			$('.img-6').click(function(){
+				$('.img-6').fadeOut();
+				$('.img-5').fadeIn();
+			});
+			$('.img-5').click(function(){
+				$('.img-5').fadeOut();
+				$('.img-4').fadeIn();
+			});
+			$('.img-4').click(function(){
+				$('.img-4').fadeOut();
+				$('.img-3').fadeIn();
+			});
+			$('.img-3').click(function(){
+				$('.img-3').fadeOut();
+				$('.img-2').fadeIn();
+			});
+			$('.img-2').click(function(){
+				$('.img-2').fadeOut();
+				$('.img-1').fadeIn();
+			});
+			$('.img-1').click(function(){
+				$('.img-1').fadeOut();
+				$('.img-6').fadeIn();
+			});
+			
+			
+
+			
+			
+			
+			
+		</script>
+		</figure>
+	</body>
+</html>

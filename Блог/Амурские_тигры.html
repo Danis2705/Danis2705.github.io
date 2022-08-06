@@ -1,0 +1,98 @@
+<html>
+	<head>
+		
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+		
+		<style>
+			img
+			{
+				height: 280px;
+				width: 450px;
+				position: absolute;
+				padding: 10px;
+			}
+			.container
+			{
+				position:relative;
+				display: flex;
+				justify-content: center;
+			}
+			.polar_bear_text
+			{
+				padding: 30px;
+				font-size: 20px;
+			}
+			
+			body
+			{
+				background: url(1610945599_3-p-belii-fon-s-listochkami-3.png);
+				background-repeat: no-repeat;
+				background-size: cover;
+			}
+		
+			
+		</style>
+	</head>
+	<body> 
+		<section class="banner-section"></section>
+	
+		<h1 align="center">Амурский тигр</h1>
+		<p class = "polar_bear_text">Мощные и грациозные амурские тигры — очень интересные животные. О них известно немало интересных и необычных фактов. Из-за человеческого фактора животные находятся на грани вымирания, поэтому сейчас предпринимается ряд мероприятий по сохранению популяции.</p>
+		<h2 align="center">Самые интересные факты об амурских тиграх</h2>
+		<ol style = "font-size: 20px; padding:30px;">
+			<li>Характерные места обитания — Китай и Дальневосточный регион России. Предпочитают долины горных рек с преобладанием поблизости лиственных деревьев (кедров и дубов).</li>
+			<li>Длина зубов у взрослых особей ─ от 10 до 15 сантиметров.</li>
+			<li>Шерсть рыжего цвета, за исключением живота, груди и шеи. Тело украшено черными полосами. Удивительный факт─ рисунок на шкуре каждого животного уникален. В природе не существует двух одинаковых уссурийских тигров.</li>
+			<li>Прыгают на 6-7 метров в длину.</li>
+			<li>Это «абсолютные хищники», которые стоят на самом верху пищевой цепочки. Способны нападать на всех зверей, уступающих им в размерах. Могут атаковать даже гималайских медведей.</li>
+		</ol>
+		<figure>
+			<figcaption><h2>Включить аудио:</h2></figcaption>
+			<audio controls src="Тигры.mp3">
+			</audio>
+			
+			<div class='container'>
+				<img class='img-1' src='11.jpg'>
+				<img class='img-2' src='22.jpg'>
+				<img class='img-3' src='33.jpg'>
+				<img class='img-4' src='44.jpg'>
+				<img class='img-5' src='55.jpg'>
+				<img class='img-6' src='66.jpeg'>
+			</div>
+			
+			<script>
+			$('.img-6').click(function(){
+				$('.img-6').fadeOut();
+				$('.img-5').fadeIn();
+			});
+			$('.img-5').click(function(){
+				$('.img-5').fadeOut();
+				$('.img-4').fadeIn();
+			});
+			$('.img-4').click(function(){
+				$('.img-4').fadeOut();
+				$('.img-3').fadeIn();
+			});
+			$('.img-3').click(function(){
+				$('.img-3').fadeOut();
+				$('.img-2').fadeIn();
+			});
+			$('.img-2').click(function(){
+				$('.img-2').fadeOut();
+				$('.img-1').fadeIn();
+			});
+			$('.img-1').click(function(){
+				$('.img-1').fadeOut();
+				$('.img-6').fadeIn();
+			});
+			
+			
+
+			
+			
+			
+			
+		</script>
+		</figure>
+	</body>
+</html>
