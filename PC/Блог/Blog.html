@@ -1,0 +1,52 @@
+<html>
+	<head>
+		
+	</head>
+	<body> 
+	
+		<h2>Животные Красной книги России</h2> 
+		<h4>Мои статьи</h4> 
+		<div id='root'></div>
+	
+	
+		<script>
+			var articles = [
+				{
+					title: 'Белые медведи',
+					linc: 'Белые_медведи.html'
+				},
+				{
+					title: 'Чёрные журавли',
+					linc: 'Чёрные_журавли.html'
+				},
+				{
+					title: 'Амурские тигры',
+					linc: 'Амурские_тигры.html'
+				}
+				
+			]
+			
+			var blog = '<ul>';
+			var article;
+			var amountOfArticles = articles.length;
+			
+			for (article = 0; article < amountOfArticles; article++)
+			{
+				blog += `
+				<li>
+					<a href="${articles[article].linc}">
+						<h3>${articles[article].title}</h3>
+					</a>
+				</li>
+				`
+			}
+			blog += '</ul>';
+			
+			var root = document.querySelector('#root');
+			root.innerHTML = blog;
+		</script>
+		
+	
+	
+	</body>
+</html>

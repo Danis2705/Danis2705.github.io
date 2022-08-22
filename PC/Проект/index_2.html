@@ -1,0 +1,57 @@
+<html>
+<head>
+	<script>
+		/*function showMessage(message)
+		{
+			var name = prompt("Как тебя зовут?");
+			alert(message + name);
+		}
+		
+		showMessage("Hello");*/
+		
+		/*function calcD(a, b, c)
+		{
+			var res = b*b - 4 * a * c;
+			return res;
+		}
+		
+		var D = calcD(10, -5, 46);
+		alert(D);*/
+		
+		/*function calcZp(zp)
+		{
+			
+			if (zp > 100000)
+			{
+				zp = zp * 0.55;
+			}
+			else
+			{
+				zp = zp * 0.65;
+			}
+			return zp;
+		}
+		
+		var zarp = prompt("Введите размер зарплаты:");
+		zarp = calcZp(zarp);
+		alert(zarp)*/
+		
+		var tasks = []
+		
+		function add_task()
+		{
+			var task = prompt("Что нужно сделать?");
+			tasks.push(task);
+		}
+		
+	</script>
+</head>
+<body>
+	<input type = "button" value = "Добавить" onclick = "add_task()">
+	<input type = "button" value = "Посмотреть" onclick = "alert(tasks)">
+	<img src="https://lelushkin.ddns.net/cat.png" onmouseover = "alert('КОТИК')">
+	<ol id = "test">
+		
+	</ol>
+</body>
+</html>
