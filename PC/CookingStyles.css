@@ -1,0 +1,378 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	
+}
+
+.container
+{
+	padding: 0 35px;
+	margin: 0 auto;
+	display: flex;
+}
+a
+{
+	text-decoration: none;
+}
+
+/*ШАПКА!!!*/
+.header
+{
+	color: black;
+	padding: 20px;
+	/*background: linear-gradient(45deg, #FFF4B5, #FBFFD1, #FFF3BC, #FBFFD1, #FFF3BC);*/
+	background-color: white;
+	z-index: 100;
+	width: 98%;
+	top: 0;
+	/*border-radius: 0px 20px 0px 20px;*/
+	box-shadow: 0px 1.5px 0px 0px rgba(173,173,173, 0.5);
+	position: sticky;
+}
+/*ЛОГОТИП!*/
+.header-logo
+{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	cursor: pointer;
+	
+}
+.logo-img
+{
+	height: 83px;
+	width: 90px;
+}
+
+.main-page
+{
+	text-decoration: none;
+	color: black;
+}
+
+/*ВЫПАДАЮЩЕЕ МЕНЮ!*/
+
+.arrow
+{
+	height: 22;
+	width: 40;
+}
+
+.item
+{
+	cursor: pointer;
+}
+.aut:hover
+{
+	color: orange;
+	background: #FFECD5;
+}
+.win:hover
+{
+	color:#3E9DFF;
+	background: #E0F0F5;
+}
+.spr:hover
+{
+	color:#86CB22;
+	background: #F5FDDF;
+}
+.sum:hover
+{
+	color:#EED459;
+	background: #FFFEE9;
+}
+
+.cook-skills:hover
+{
+	background: #D7E4F6	;
+}
+
+.cooking-dictionary:hover
+{
+	background: #D7E4F6	;
+}
+.menu-item
+{
+	list-style: none;
+	cursor: default;
+}
+
+.menu-link
+{
+	text-decoration: none;
+	color: black;
+	padding: 0 5px;
+}
+
+.menu-item:hover .arrow
+{
+	transform: rotate(180deg);
+}
+
+.menu
+{
+	display: flex;
+	justify-content: center;
+}
+
+.header-menu
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0px 170px;
+
+	
+	
+}
+
+.header-menu li
+{
+	width: 390px;
+	list-style: none;
+	position: relative;
+	
+}
+
+.header-menu a
+{
+	color: black;
+	font-size: 20px;
+	text-decoration: none;
+	display: block;	
+	text-align: center;
+	padding: 0 20px;
+	height: 30px;
+	line-height: 30px;
+	transition: all.5s;
+}
+
+
+.header-menu ul
+{
+	position: absolute;
+	left: 0;
+	top: 100%;
+	display: none;
+	padding: 0;
+}
+
+.header-menu li:hover
+{
+	box-shadow: 0px 1.2px 1.2px 1.2px rgba(173,173,173, 0.5);
+	background: white;
+}
+
+.header-menu li:hover ul
+{
+	display: block;
+	box-shadow: 0px 1.2px 1.2px 1.2px  rgba(173,173,173, 0.5);
+	background: white;
+	
+}
+
+/*ГЛАВНАЯ ЧАСТЬ!!!*/
+
+/*СЛОГАН!*/
+
+.tagline-text
+{
+	font-size: 50px;
+	text-align: center;
+	margin: 40px 40px 40px;
+}
+
+.tagline
+{
+	background: white;
+	border:  solid black;
+	height: 60px;
+	width: 1030px;
+	margin: 55px 270px;
+}
+
+/*ВИЗУАЛЬНОЕ МЕНЮ!*/
+
+.pictures-menu
+{
+	padding: 40px 0px;
+
+}
+.pictures-row
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+.picture
+{
+	padding: 25px;
+	text-align: center;
+	
+}
+.picture:hover
+{
+	transform: scale(1.15);
+	cursor: pointer;	
+}
+.picture-title, .picture-text
+{
+	margin-bottom: 10px;
+	padding: 20px;
+}
+.autumn-img
+{
+	height: 500px;
+	width: 277px;
+	border-radius: 5px;
+}
+
+.autumn-img:hover
+{
+	box-shadow: 0px 3px 12px #FFB345;
+}
+
+.winter-img
+{
+	height: 500px;
+	width: 277px;
+	border-radius: 5px;
+}
+
+.winter-img:hover
+{
+	box-shadow: 0px 3px 12px #65A5D1;
+}
+
+.spring-img
+{
+	height: 500px;
+	width: 277px;
+	border-radius: 5px;
+}
+
+.spring-img:hover
+{
+	box-shadow: 0px 3px 12px #DDFB3F;
+}
+
+.summer-img
+{
+	height: 500px;
+	width: 277px;
+	border-radius: 5px;
+}
+
+.summer-img:hover
+{
+	box-shadow: 0px 3px 12px #EFE144;
+}
+
+/*ФУТЕР!!!*/
+.footer
+{
+	background: #313D4C;
+	background-size: cover;
+	padding: 80px 0px;
+	/*border-radius: 20px 20px 0px 0px;*/
+}
+
+.copyright
+{
+	color: white;
+}
+
+.footer-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.social-networks
+{
+    display: flex;
+    justify-content: center;
+}
+
+.footer-logo{
+    margin: 10px;
+    width: 60px;
+    height: 60px;
+}
+
+.footer-search{
+    display: flex;
+    justify-content: space-between;
+    margin-top:30px;
+    align-items: center;
+}
+
+.footer-search-input{
+    height: 40px;
+    flex-grow: 3;
+    margin-right: 20px;
+    border-radius: 10px;
+    border: none;
+}
+
+.footer-search-button{
+    height: 40px;
+    flex-grow: 2;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.footer-container
+{
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+@media screen and (max-width: 850px)
+{
+	.header-menu
+	{
+		display: none;
+	}
+	
+	.header-logo
+	{
+		justify-content: center;
+	}
+	
+	.cards-row
+	{
+		justify-content: center;
+		flex-wrap: wrap;
+
+	}
+	
+	.card
+	{
+		width: auto;
+	}
+	
+	.search, .footer-search-input, .footer-search-button, .social-networks
+	{
+		width: 100%;
+		margin-button: 10px;
+	}
+	
+	.footer-search-input
+	{
+		margin-right: 0px;
+	}
+	
+	.footer-row, .footer-search
+	{
+		flex-wrap: wrap;
+	}
+	
+	.social-networks
+	{
+		justify-content: space-around;
+	}
+}
